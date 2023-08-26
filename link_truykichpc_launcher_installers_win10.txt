@@ -1,0 +1,30 @@
+ Dear mọi người,
+ Em gửi bản builds windows 10 mới, bản builds sửa lỗi khi chạy trên 1 số version windows 10, link các file cài đặt ở dưới đây:
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_cc1_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_cc2_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_cc3_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_fb1_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_fb2_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_fb3_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_gg1_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_gg2_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_gg3_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_gcp_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_hubservices_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_waystation_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_viking_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_spartacus_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_duongdh_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_duo_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_ckg_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_chimsedinang_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_rip113_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_gamehome_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_gamingx_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_gctruykichpc_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_fus_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_kingzone_Setup.exe
+ https://cdnb2b.truykichpc.vn/test/dangtb/27-08-2023/TruyKichPC_Win10_other_Setup.exe
+ Dự án cho a e kỹ thuật phản hồi sớm để chỉnh sửa và update nhé ạ.
+ Thank and Best regards,

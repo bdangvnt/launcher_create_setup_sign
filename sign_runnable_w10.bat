@@ -1,0 +1,27 @@
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_cc1\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_cc2\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_cc3\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_fb1\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_fb2\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_fb3\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_gg1\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_gg2\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_gg3\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_gcp\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_hubservices\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_duongdh\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_spartacus\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_viking\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_waystation\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_duo\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_ckg\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_chimsedinang\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_fus\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_gamehome\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_gamingx\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_gctruykichpc\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_kingzone\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_other\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_rip113\TruyKichPC.exe
+REM CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 F:\VTC\Gitlab\Launcher\vtc-esport-client\builds_test\Win10\truykichpc_mixed\TruyKichPC.exe

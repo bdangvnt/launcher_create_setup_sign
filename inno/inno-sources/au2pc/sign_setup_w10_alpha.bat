@@ -1,0 +1,12 @@
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_baoch_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_cococ_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_fbreg_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_fbscl_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_ggdpl_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_ggreg_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_koccc_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_kolll_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_oohhh_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_tikok_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_Win10_vtcme_Setup.exe

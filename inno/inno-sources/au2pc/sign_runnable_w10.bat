@@ -1,0 +1,12 @@
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_baoch\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_cococ\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_fbreg\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_fbscl\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_ggdpl\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_ggreg\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_koccc\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_kolll\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_oohhh\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_tikok\VTCPlus.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\alpha\builds_test\Win10\au2pc_vtcme\VTCPlus.exe

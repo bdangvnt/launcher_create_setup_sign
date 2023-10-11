@@ -9,7 +9,7 @@ CALL set buildPath=D:\VTC\gitlab\PC_Launcher\vtc-esport-client\lib\mains\prod\bu
 CALL set rsBPB=D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\
 CALL set outputDirectory=D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files-prod\
 CALL set buildVersion=1.0.0.1
-CALL set buildNumberAndDate=b1204102023a
+CALL set buildNumberAndDate=b1211102023p
 for %%w in (Win10) do (
 	CALL:ECHORED %%w
 	if not exist "D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\au2pc-setup-output-files\AU2PC_%%w_Setup.exe" (

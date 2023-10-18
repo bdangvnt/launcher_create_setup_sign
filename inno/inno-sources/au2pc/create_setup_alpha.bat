@@ -9,7 +9,7 @@ CALL set buildPath=..\..\..\..\vtc-esport-client\lib\mains\alpha\builds_test
 CALL set rsBPB=..\..\..\..\launcher_create_setup_sign\
 CALL set outputDirectory=..\..\..\..\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\
 CALL set buildVersion=1.0.0.1
-CALL set buildNumberAndDate=b1211102023a
+CALL set buildNumberAndDate=b1217102023a
 for %%w in (Win10) do (
 	CALL:ECHORED %%w
 	if not exist "..\..\..\..\launcher_create_setup_sign\inno\au2pc-setup-output-files-alpha\AU2PC_%%w_Setup.exe" (

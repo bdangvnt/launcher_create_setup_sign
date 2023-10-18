@@ -43,7 +43,7 @@ AppPublisher=VTCGame
 AppPublisherURL={#url}
 AppSupportURL={#url}
 AppUpdatesURL={#url}
-DefaultDirName={pf}\VTCGame\AU2PC
+DefaultDirName={sd}\VTCGame\AU2PC
 DefaultGroupName=VTCGame\AU2PC
 
 DisableProgramGroupPage=true

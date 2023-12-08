@@ -25,3 +25,4 @@ CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SH
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\builds_test\Win7\truykichpc_other\TruyKichPC.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\builds_test\Win7\truykichpc_rip113\TruyKichPC.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\builds_test\Win7\truykichpc_mixed\TruyKichPC.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\vtc-esport-client\builds_test\Win7\truykichpc_test\TruyKichPC.exe

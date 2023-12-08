@@ -24,4 +24,5 @@ CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SH
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\20231013\TruyKichPC_Win10_kingzone_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\20231013\TruyKichPC_Win10_other_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\20231013\TruyKichPC_Win10_rip113_Setup.exe
-REM CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\20231013\TruyKichPC_Win10_mixed_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\20231013\TruyKichPC_Win10_mixed_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\20231013\TruyKichPC_Win10_test_Setup.exe

@@ -3,19 +3,19 @@ REM CHÚ Ý: Có thể dùng đường dẫn tương đối thay vì tuyệt đ�
 @echo off
 cls
 CALL set buildsPath=..\..\au2pc-setup-output-files-alpha
-if not exist "%buildsPath%\AU2PC_Win10_Setup.exe" (
-    CALL:ECHORED "%buildsPath%\AU2PC_Win10_Setup.exe not existing"
+if not exist "%buildsPath%\VTCPlus_Win10_Setup.exe" (
+    CALL:ECHORED "%buildsPath%\VTCPlus_Win10_Setup.exe not existing"
 ) else (
-    CALL:ECHORED "sign %buildsPath%\AU2PC_Win10_Setup.exe"
-    CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 "%buildsPath%\AU2PC_Win10_Setup.exe"
+    CALL:ECHORED "sign %buildsPath%\VTCPlus_Win10_Setup.exe"
+    CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 "%buildsPath%\VTCPlus_Win10_Setup.exe"
 )
 REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme
 for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme) do (
-    if not exist "%buildsPath%\AU2PC_Win10_%%x_Setup.exe" (
-        CALL:ECHORED "%buildsPath%\AU2PC_Win10_%%x_Setup.exe not existing"
+    if not exist "%buildsPath%\VTCPlus_Win10_%%x_Setup.exe" (
+        CALL:ECHORED "%buildsPath%\VTCPlus_Win10_%%x_Setup.exe not existing"
     ) else (
-        CALL:ECHORED "sign %buildsPath%\AU2PC_Win10_%%x_Setup.exe"
-        CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 "%buildsPath%\AU2PC_Win10_%%x_Setup.exe"
+        CALL:ECHORED "sign %buildsPath%\VTCPlus_Win10_%%x_Setup.exe"
+        CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 "%buildsPath%\VTCPlus_Win10_%%x_Setup.exe"
     )
 )
 

@@ -24,7 +24,8 @@ CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SH
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win7_kingzone_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win7_other_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win7_rip113_Setup.exe
-REM CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win7_mixed_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win7_mixed_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win7_test_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_cc1_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_cc2_Setup.exe
@@ -51,4 +52,5 @@ CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SH
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_kingzone_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_other_Setup.exe
 CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_rip113_Setup.exe
-REM CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_mixed_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_mixed_Setup.exe
+CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 D:\VTC\gitlab\PC_Launcher\launcher_create_setup_sign\inno\setup-output-files\TruyKichPC_Win10_test_Setup.exe

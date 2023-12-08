@@ -85,7 +85,7 @@ Source: {#BuildSourcePath}\*; DestDir: {app}; Flags: ignoreversion recursesubdir
 [Icons]
 Name: {group}\Truy Kich PC; Filename: {app}\TruyKichPC.exe; WorkingDir: {app}
 Name: {group}\Uninstall;IconFileName:{#rsBP}\inno\inno-images\uninstall.ico; Filename: {uninstallexe}
-Name: {userdesktop}\Truy Kich PC; Filename: {app}\TruyKichPC.exe; WorkingDir: {app}; Tasks: desktopicon
+Name: {userdesktop}\TruyKichPC; Filename: {app}\VTCPlus.exe; WorkingDir: {app}; IconFilename: "{app}\Iconapp.ico"; Tasks: desktopicon
 Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\Truy Kich PC; Filename: {app}\TruyKichPC.exe; WorkingDir: {app}
 
 [Run]

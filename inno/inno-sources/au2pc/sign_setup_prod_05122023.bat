@@ -3,8 +3,8 @@ REM CHÚ Ý: Có thể dùng đường dẫn tương đối thay vì tuyệt đ�
 @echo off
 cls
 CALL set buildsPath=..\..\au2pc-setup-output-files-prod
-CALL set buildVersion=1.0.0.21
-CALL set buildNumberAndDate=b2105122023p
+CALL set buildVersion=1.0.0.22
+CALL set buildNumberAndDate=b2208122023p
 
 if not exist "%buildsPath%\VTCPLUS_Win10_B2C_Setup_%buildVersion%%buildNumberAndDate%.exe" (
     CALL:ECHORED "%buildsPath%\VTCPLUS_Win10_B2C_Setup_%buildVersion%%buildNumberAndDate%.exe not existing"

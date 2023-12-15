@@ -8,8 +8,8 @@ cls
 CALL set buildPath=..\..\..\..\vtc-esport-client\lib\mains\prod\builds_test
 CALL set rsBPB=..\..\..\..\launcher_create_setup_sign\
 CALL set outputDirectory=..\..\..\..\launcher_create_setup_sign\inno\au2pc-setup-output-files-prod\
-CALL set buildVersion=1.0.0.22
-CALL set buildNumberAndDate=b2208122023p
+CALL set buildVersion=1.0.0.24
+CALL set buildNumberAndDate=b2412122023P
 for %%w in (Win10) do (
 	CALL:ECHORED %%w
 	if not exist "%outputDirectory%VTCPLUS_%%w_B2C_Setup_%buildVersion%%buildNumberAndDate%.exe" (

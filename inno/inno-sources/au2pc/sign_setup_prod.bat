@@ -9,8 +9,8 @@ if not exist "%buildsPath%\AU2PC_Win10_Setup.exe" (
     CALL:ECHORED "sign %buildsPath%\AU2PC_Win10_Setup.exe"
     CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 "%buildsPath%\AU2PC_Win10_Setup.exe"
 )
-REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme
-for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme) do (
+REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5
+for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5) do (
     if not exist "%buildsPath%\AU2PC_Win10_%%x_Setup.exe" (
         CALL:ECHORED "%buildsPath%\AU2PC_Win10_%%x_Setup.exe not existing"
     ) else (

@@ -12,8 +12,8 @@ if not exist "%buildsPath%\VTCPLUS_Win10_B2C_Setup_%buildVersion%%buildNumberAnd
     CALL:ECHORED "sign %buildsPath%\VTCPLUS_Win10_B2C_Setup_%buildVersion%%buildNumberAndDate%.exe"
     CALL signtool sign /a /tr http://timestamp.globalsign.com/tsa/r6advanced1 /td SHA256 /fd SHA256 "%buildsPath%\VTCPLUS_Win10_B2C_Setup_%buildVersion%%buildNumberAndDate%.exe"
 )
-REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme
-for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme) do (
+REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5
+for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5) do (
     if not exist "%buildsPath%\VTCPLUS_Win10_%%x_Setup_%buildVersion%%buildNumberAndDate%.exe" (
         CALL:ECHORED "%buildsPath%\VTCPLUS_Win10_%%x_Setup_%buildVersion%%buildNumberAndDate%.exe not existing"
     ) else (

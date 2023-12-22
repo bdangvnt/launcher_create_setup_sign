@@ -16,8 +16,8 @@ for %%w in (Win10) do (
 		CALL:ECHORED VTCPLUS_%%w_%buildVersion%_B2C_%buildNumberAndDate%
 		CALL iscc .\VTCPlus_Setup_Prod.iss /DBuildSourcePath=%buildPath%\%%w\au2pc /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=AU2PC_%%w_Setup /DrsBP=%rsBPB% /DeventTypePrefix=VTCPLUS_%%w_%buildVersion%_B2C_%buildNumberAndDate%
 	)
-	REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme
-	for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme) do (
+	REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5
+	for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5) do (
 		CALL:ECHORED VTCPLUS_%%w_%buildVersion%_%%x_%buildNumberAndDate%
 		if not exist "..\..\..\..\launcher_create_setup_sign\inno\au2pc-setup-output-files-prod\AU2PC_%%w_%%x_Setup.exe" (
 			CALL:ECHORED %%x

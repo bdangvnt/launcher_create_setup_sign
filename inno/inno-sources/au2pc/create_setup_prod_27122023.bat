@@ -9,23 +9,29 @@ CALL set buildPath=..\..\..\..\vtc-esport-client\lib\mains\prod\builds_test
 CALL set rsBPB=..\..\..\..\launcher_create_setup_sign\
 CALL set outputDirectory=..\..\..\..\launcher_create_setup_sign\inno\au2pc-setup-output-files-prod\
 CALL set buildVersion=1.0.0.26
+
+REM Dùng gửi sang tracking
 CALL set buildNumberAndDate=b2622122023P
+
+REM chỉ dùng để lưu vào tên file
+CALL set buildEnvironment=P
+
 for %%w in (Win10) do (
 	CALL:ECHORED %%w
-	if not exist "%outputDirectory%VTCPLUS_%%w_B2C_Setup_%buildVersion%%buildNumberAndDate%.exe" (
-		CALL:ECHORED VTCPLUS_%%w_B2C_Setup_%buildVersion%%buildNumberAndDate%.exe
+	if not exist "%outputDirectory%VTCPLUS_%%w_B2C_Setup_%buildVersion%%buildEnvironment%.exe" (
+		CALL:ECHORED VTCPLUS_%%w_B2C_Setup_%buildVersion%%buildEnvironment%.exe
 		CALL:ECHORED EVENT_AU2PC_%%w_B2C_%buildVersion%%buildNumberAndDate%
-		REM CALL iscc .\VTCPlus_Setup_Prod.iss /DBuildSourcePath=%buildPath%\%%w\au2pc /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=AU2PC_%%w_Setup /DrsBP=%rsBPB% /DeventTypePrefix=VTCPLUS_%%w_%buildVersion%_B2C_%buildNumberAndDate%
-		CALL iscc .\VTCPlus_Setup_Prod.iss /DBuildSourcePath=%buildPath%\%%w\au2pc /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=VTCPLUS_%%w_B2C_Setup_%buildVersion%%buildNumberAndDate% /DrsBP=%rsBPB% /DeventTypePrefix=AU2PC_%%w_B2C_%buildVersion%%buildNumberAndDate%
+		REM CALL iscc .\VTCPlus_Setup_Prod.iss /DBuildSourcePath=%buildPath%\%%w\au2pc /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=AU2PC_%%w_Setup /DrsBP=%rsBPB% /DeventTypePrefix=VTCPLUS_%%w_%buildVersion%_B2C_
+		CALL iscc .\VTCPlus_Setup_Prod.iss /DBuildSourcePath=%buildPath%\%%w\au2pc /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=VTCPLUS_%%w_B2C_Setup_%buildVersion%%buildEnvironment% /DrsBP=%rsBPB% /DeventTypePrefix=AU2PC_%%w_B2C_%buildVersion%%buildNumberAndDate%
 	)
 	REM baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5
 	for %%x in (baoch cococ fbreg fbscl ggdpl ggreg koccc kolll oohhh tikok vtcme ccoc1 ccoc2 ccoc3 ccoc4 ccoc5 vtcg1 vtcg2 vtcg3 vtcg4 vtcg5) do (
-		if not exist "%outputDirectory%VTCPLUS_%%w_%%x_Setup_%buildVersion%%buildNumberAndDate%.exe" (
+		if not exist "%outputDirectory%VTCPLUS_%%w_%%x_Setup_%buildVersion%%buildEnvironment%.exe" (
 			CALL:ECHORED %%x
-			CALL:ECHORED CREATE_VTCPLUS_%%w_%%x_Setup_%buildVersion%%buildNumberAndDate%.exe
+			CALL:ECHORED CREATE_VTCPLUS_%%w_%%x_Setup_%buildVersion%%buildEnvironment%.exe
 			CALL:ECHORED EVENT_AU2PC_%%w_%%x_%buildVersion%%buildNumberAndDate%
-			CALL del %outputDirectory%VTCPLUS_%%w_%%x_Setup_%buildVersion%%buildNumberAndDate%.exe /F /Q
-			CALL iscc .\VTCPlus_Setup_Prod.iss /DBuildSourcePath=%buildPath%\%%w\AU2PC_%%x /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=VTCPLUS_%%w_%%x_Setup_%buildVersion%%buildNumberAndDate% /DrsBP=%rsBPB% /DeventTypePrefix=AU2PC_%%w_%%x_%buildVersion%%buildNumberAndDate%
+			CALL del %outputDirectory%VTCPLUS_%%w_%%x_Setup_%buildVersion%.exe /F /Q
+			CALL iscc .\VTCPlus_Setup_Prod.iss /DBuildSourcePath=%buildPath%\%%w\AU2PC_%%x /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=VTCPLUS_%%w_%%x_Setup_%buildVersion%%buildEnvironment% /DrsBP=%rsBPB% /DeventTypePrefix=AU2PC_%%w_%%x_%buildVersion%%buildNumberAndDate%
 		)
 	)
 )

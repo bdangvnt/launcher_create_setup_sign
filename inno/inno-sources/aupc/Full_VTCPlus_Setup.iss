@@ -79,8 +79,8 @@ Name: desktopicon; Description: {cm:CreateDesktopIcon}; GroupDescription: {cm:Ad
 ;Flags: checked
 
 [Files]
-Source: {#rsBP}\vc_redist\VC_redist.x64.exe; DestDir: "{tmp}"; Flags: deleteafterinstall; Check: IsWin64
-Source: {#rsBP}\vc_redist\VC_redist.x86.exe; DestDir: "{tmp}"; Flags: deleteafterinstall; Check: not IsWin64
+; Source: {#rsBP}\vc_redist\VC_redist.x64.exe; DestDir: "{tmp}"; Flags: deleteafterinstall; Check: IsWin64
+; Source: {#rsBP}\vc_redist\VC_redist.x86.exe; DestDir: "{tmp}"; Flags: deleteafterinstall; Check: not IsWin64
 Source: {#BuildSourcePath}\*; DestDir: {app}; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -91,8 +91,8 @@ Name: {userdesktop}\VTCPlus; Filename: {app}\VTCPlus.exe; WorkingDir: {app}; Tas
 Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\VTCPlus; Filename: {app}\VTCPlus.exe; WorkingDir: {app}
 
 [Run]
-Filename: "{tmp}\vc_redist.x86.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: not IsWin64
-Filename: "{tmp}\vc_redist.x64.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: IsWin64
+; Filename: "{tmp}\vc_redist.x86.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: not IsWin64
+; Filename: "{tmp}\vc_redist.x64.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: IsWin64
 Filename: {app}\7za.exe; Parameters: "x ""{tmp}\dl\audition_fp.zip"" -o""{app}\Audition"" * -r -aoa"; Flags: runhidden runascurrentuser;
 Filename: {app}\VTCPlus.exe; Description: {cm:LaunchProgram,VTCPlus}; Flags: nowait postinstall skipifsilent
 

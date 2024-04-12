@@ -93,7 +93,7 @@ Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\VTCPlus; Filename: 
 [Run]
 ; Filename: "{tmp}\vc_redist.x86.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: not IsWin64
 ; Filename: "{tmp}\vc_redist.x64.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: IsWin64
-Filename: {app}\7za.exe; Parameters: "x ""{tmp}\dl\audition_fp.zip"" -o""{app}\Audition"" * -r -aoa"; Flags: runhidden runascurrentuser;
+Filename: {app}\7za.exe; Parameters: "x ""{tmp}\dl\audition_fp.zip"" -o""{app}"" * -r -aoa"; Flags: runhidden runascurrentuser;
 Filename: {app}\VTCPlus.exe; Description: {cm:LaunchProgram,VTCPlus}; Flags: nowait postinstall skipifsilent
 
 [Registry]
@@ -233,15 +233,15 @@ begin
   if CurPageID = wpReady then begin
     DownloadPage.Clear;
     // Use AddEx to specify a username and password
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.zip', 'dl\audition_fp.zip', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z01', 'dl\audition_fp.z01', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z02', 'dl\audition_fp.z02', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z03', 'dl\audition_fp.z03', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z04', 'dl\audition_fp.z04', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z05', 'dl\audition_fp.z05', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z06', 'dl\audition_fp.z06', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z07', 'dl\audition_fp.z07', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z08', 'dl\audition_fp.z08', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.zip', 'dl\audition_fp.zip', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z01', 'dl\audition_fp.z01', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z02', 'dl\audition_fp.z02', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z03', 'dl\audition_fp.z03', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z04', 'dl\audition_fp.z04', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z05', 'dl\audition_fp.z05', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z06', 'dl\audition_fp.z06', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z07', 'dl\audition_fp.z07', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z08', 'dl\audition_fp.z08', '');
     DownloadPage.Show;
     try
       try

@@ -48,3 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+inno/setup-output-files-aupc/
+inno/setup-output-files-bt2/
+inno/setup-output-files-vtcplus/

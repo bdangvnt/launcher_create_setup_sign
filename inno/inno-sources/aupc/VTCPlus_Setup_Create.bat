@@ -9,11 +9,11 @@ REM CALL set buildPath=D:\Flutter\PC_Launcher\vtc-esport-client\builds_test
 CALL set buildPath=D:\Games\Audition\VTCPlus
 CALL set rsBPB=D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\
 CALL set outputDirectory=D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\inno\setup-output-files-aupc\
-CALL set buildVersion="1.0.0.15"
-CALL set buildNumberAndDate="b1515012024p"
+CALL set buildVersion="1.0.0.27"
+CALL set buildNumberAndDate="b2715042024p"
 
-if not exist "D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\inno\setup-output-files-aupc\AUPC_Setup.exe" (
-	CALL iscc .\VTCPlus_Setup.iss /DBuildSourcePath=%buildPath% /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=AUPC_Setup /DrsBP=%rsBPB% /DeventTypePrefix=VTCPLUS_B2C_%buildVersion%%w%buildNumberAndDate%
+if not exist "D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\inno\setup-output-files-aupc\VTCPlus_AUPCFull_Setup.exe" (
+	CALL iscc .\VTCPlus_Setup.iss /DBuildSourcePath=%buildPath% /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=VTCPlus_AUPCFull_Setup /DrsBP=%rsBPB% /DeventTypePrefix=VTCPLUS_B2C_%buildVersion%%w%buildNumberAndDate%
 )
 REM cc1 cc2 cc3 chimsedinang ckg duo duongdh fb1 fb2 fb3 fus gamehome gamingx gcp gctruykichpc gg1 gg2 gg3 hubservices kingzone mixed other rip113 spartacus viking waystation test
 REM for %%x in (hubservices gcp fus kingzone other ckg chimsedinang rip113 cc1 cc2 cc3 fb1 fb2 fb3 gg1 gg2 gg3) do (

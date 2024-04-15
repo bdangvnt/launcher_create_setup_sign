@@ -1,0 +1,1 @@
+tạo file cài đặt để tải resource cho game

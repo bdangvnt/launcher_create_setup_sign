@@ -51,14 +51,14 @@ DisableProgramGroupPage=true
 
 OutputDir={#outputDirectory}
 OutputBaseFilename={#OutputSetupFilename}
-SetupIconFile={#rsBP}\inno\inno-images\au2pc\Iconapp.ico
+SetupIconFile={#rsBP}\inno\inno-images\vtcplus\Iconapp.ico
 
-UninstallIconFile={#rsBP}\inno\inno-images\au2pc\uninstall.ico
+UninstallIconFile={#rsBP}\inno\inno-images\vtcplus\uninstall.ico
 Compression=lzma
 SolidCompression=yes
 WindowVisible=false
-WizardImageFile={#rsBP}\inno\inno-images\au2pc\Iconapp-medium.bmp
-WizardSmallImageFile={#rsBP}\inno\inno-images\au2pc\Iconapp-small.bmp
+WizardImageFile={#rsBP}\inno\inno-images\vtcplus\Iconapp-medium.bmp
+WizardSmallImageFile={#rsBP}\inno\inno-images\vtcplus\Iconapp-small.bmp
 DirExistsWarning=no
 UsePreviousAppDir=false
 ;DiskSpanning=yes
@@ -146,7 +146,7 @@ begin
     '"accountId": "",' +
     '"accountName": "",' +
     '"version": "1.0.0.25",' +
-    '"game": "AU2PC"' +                                                                                                          
+    '"game": "VTCPlus"' +                                                                                                          
     '}';
 
   // Make the API request using the POST method
@@ -179,7 +179,7 @@ begin
     '"accountId": "",' +
     '"accountName": "",' +
     '"version": "1.0.0.25",' +
-    '"game": "AU2PC"' +
+    '"game": "VTCPlus"' +
     '}';
 
   // Make the API request using the POST method

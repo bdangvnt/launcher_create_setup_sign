@@ -93,7 +93,7 @@ Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\VTCPlus; Filename: 
 [Run]
 Filename: "{tmp}\vc_redist.x86.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: not IsWin64
 Filename: "{tmp}\vc_redist.x64.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: IsWin64
-Filename: {app}\7za.exe; Parameters: "x ""{tmp}\dl\audition_fp.zip"" -o""{app}\Audition"" * -r -aoa"; Flags: runhidden runascurrentuser;
+; Filename: {app}\7za.exe; Parameters: "x ""{tmp}\dl\audition_fp.zip"" -o""{app}\Audition"" * -r -aoa"; Flags: runhidden runascurrentuser;
 Filename: {app}\VTCPlus.exe; Description: {cm:LaunchProgram,VTCPlus}; Flags: nowait postinstall skipifsilent
 
 [Registry]

@@ -10,7 +10,7 @@ CALL set buildPath=D:\Games\VTCPlus
 CALL set rsBPB=D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\
 CALL set outputDirectory=D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\inno\setup-output-files-vtcplus\
 CALL set buildVersion="1.0.0.27"
-CALL set buildNumberAndDate="b2714042024p"
+CALL set buildNumberAndDate="b2715042024p"
 
 if not exist "D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\inno\setup-output-files-vtcplus\VTCPlus_Setup.exe" (
 	CALL iscc .\VTCPlus_Setup.iss /DBuildSourcePath=%buildPath% /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=VTCPlus_Setup /DrsBP=%rsBPB% /DeventTypePrefix=VTCPLUS_B2C_%buildVersion%%w%buildNumberAndDate%

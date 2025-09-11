@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\VTCPlus1]
+@="URL:Custom Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\VTCPlus1\DefaultIcon]
+@="%CD%\VTCPlus.exe,0"
+
+[HKEY_CLASSES_ROOT\VTCPlus1\shell]
+
+[HKEY_CLASSES_ROOT\VTCPlus1\shell\open]
+
+[HKEY_CLASSES_ROOT\VTCPlus1\shell\open\command]
+@=""\"%CD%\\VTCPlus.exe" \"%1\""
+@=""\"%CD%\\test.bat\" \"%1\"\""

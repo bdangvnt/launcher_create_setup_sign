@@ -9,8 +9,8 @@ REM CALL set buildPath=D:\Flutter\PC_Launcher\vtc-esport-client\builds_test
 CALL set buildPath=D:\SETUP\7z2301-extra
 CALL set rsBPB=D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\
 CALL set outputDirectory=D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\inno\setup-output-files-aupc\
-CALL set buildVersion="1.0.0.27"
-CALL set buildNumberAndDate="b2715042024p"
+CALL set buildVersion="1.0.0.40"
+CALL set buildNumberAndDate="b4008102024p"
 
 if not exist "D:\DEV\VTC\TTPM\VTCPlus\launcher_create_setup_sign\inno\setup-output-files-aupc\VTCPlus_AUPC_Setup_MiniClient.exe" (
 	CALL iscc .\Full_VTCPlus_Setup_Miniclient.iss /DBuildSourcePath=%buildPath% /DoutputDirectory=%outputDirectory% /DOutputSetupFilename=VTCPlus_AUPC_Setup_MiniClient /DrsBP=%rsBPB% /DeventTypePrefix=VTCPLUS_B2C_%buildVersion%%w%buildNumberAndDate%

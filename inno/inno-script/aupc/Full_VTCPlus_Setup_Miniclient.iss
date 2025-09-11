@@ -242,6 +242,7 @@ begin
     DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z06', 'dl\audition_fp.z06', '');
     DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z07', 'dl\audition_fp.z07', '');
     DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z08', 'dl\audition_fp.z08', '');
+    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dlf/audition_fp_full.z09', 'dl\audition_fp.z09', '');
     DownloadPage.Show;
     try
       try

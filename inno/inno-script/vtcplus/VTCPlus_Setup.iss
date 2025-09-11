@@ -145,7 +145,7 @@ begin
     '"screenResolution": "",' +
     '"accountId": "",' +
     '"accountName": "",' +
-    '"version": "1.0.0.25",' +
+    '"version": "1.0.0.40",' +
     '"game": "VTCPlus"' +                                                                                                          
     '}';
 
@@ -178,7 +178,7 @@ begin
     '"screenResolution": "",' +
     '"accountId": "",' +
     '"accountName": "",' +
-    '"version": "1.0.0.25",' +
+    '"version": "1.0.0.40",' +
     '"game": "VTCPlus"' +
     '}';
 

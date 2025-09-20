@@ -3,18 +3,18 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 ; https://github.com/jrsoftware/issrc/blob/main/Examples/CodeDownloadFiles.iss
 
-;#define MyAppName "Tieu Ngao VTC"
-;#define MyAppVerName "Tieu Ngao VTC Setup"
-;#define MyAppPublisher "VTC"
+;#define MyAppName "Tieu Ngao Giang Ho VTC"
+;#define MyAppVerName "Tieu Ngao Giang Ho VTC_Setup"
+;#define MyAppPublisher "Tieu Ngao Giang Ho VTC"
 ;#define MyAppURL "http://vtc.org.vn"
-;#define MyAppExeName "Tieu Ngao VTC.exe"
+;#define MyAppExeName "Tieu Ngao Giang Ho VTC_Setup.exe"
 
 #ifndef rsBP
 	#define rsBP="Default rsbp"
 #endif
 
 #ifndef url
-	#define url="http://vtc.org.vn"
+	#define url="http://vtcgame.vn"
 #endif
 
 #ifndef outputDirectory
@@ -30,7 +30,7 @@
 #endif
 
 #ifndef eventTypePrefix
-	#define eventTypePrefix="TNGH_W10_B2C_1.0.0.1W10b1112092025p"
+	#define eventTypePrefix="TNGH_W10_B2C_1.0.0.46W10b4620092025p"
 #endif
 
 [Setup]                                                                                     
@@ -39,14 +39,14 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 SignTool=VTCPlusSign
 AppId={{6BD22BA3-CD68-666B-86BD-88D66EA88E8C}
-AppName=Tieu Ngao VTC
-AppVerName=Tieu Ngao VTC 
+AppName=Tieu Ngao Giang Ho VTC
+AppVerName=Tieu Ngao Giang Ho VTC 
 AppPublisher=VTC
 AppPublisherURL={#url}
 AppSupportURL={#url}
 AppUpdatesURL={#url}
-DefaultDirName={sd}\VTC\Tieu Ngao VTC
-DefaultGroupName=VTC\Tieu Ngao VTC
+DefaultDirName={sd}\VTC\Tieu Ngao Giang Ho VTC
+DefaultGroupName=Tieu Ngao Giang Ho VTC
 DisableProgramGroupPage=true
 
 OutputDir={#outputDirectory}
@@ -72,7 +72,7 @@ SignedUninstaller=yes
 
 [Languages]
 ;Name: english; MessagesFile: compiler:Default.isl
-Name: "vietnamesedone"; MessagesFile: "compiler:Languages\VietnameseAu2PC.isl"
+Name: "vietnamesedone"; MessagesFile: "compiler:Languages\VietnameseTNGH.isl"
 
 [Tasks]
 Name: desktopicon; Description: {cm:CreateDesktopIcon}; GroupDescription: {cm:AdditionalIcons}; 
@@ -85,21 +85,22 @@ Source: {#BuildSourcePath}\*; DestDir: {app}; Flags: ignoreversion recursesubdir
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: {group}\VTC; Filename: {app}\Tieu Ngao VTC.exe; WorkingDir: {app}
+Name: {group}\Tieu Ngao Giang Ho VTC; Filename: {app}\TieuNgaoGiangHoVTC.exe; WorkingDir: {app}
 Name: {group}\Uninstall;IconFileName:{#rsBP}\inno\inno-images\uninstall.ico; Filename: {uninstallexe}
-Name: {userdesktop}\VTC; Filename: {app}\Tieu Ngao VTC.exe; WorkingDir: {app}; Tasks: desktopicon
-Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\VTC; Filename: {app}\Tieu Ngao VTC.exe; WorkingDir: {app}
+Name: {userdesktop}\Tieu Ngao Giang Ho VTC; Filename: {app}\TieuNgaoGiangHoVTC.exe; WorkingDir: {app}; Tasks: desktopicon
+Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\Tieu Ngao Giang Ho VTC; Filename: {app}\TieuNgaoGiangHoVTC.exe; WorkingDir: {app}
 
 [Run]
 Filename: "{tmp}\vc_redist.x86.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: not IsWin64
 Filename: "{tmp}\vc_redist.x64.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: IsWin64
-Filename: {app}\Tieu Ngao VTC.exe; Description: {cm:LaunchProgram,VTC}; Flags: nowait postinstall skipifsilent
+Filename: {app}\7za.exe; Parameters: "x ""{tmp}\dl\audition_fp.zip"" -o""{app}\Audition"" * -r -aoa"; Flags: runhidden runascurrentuser;
+Filename: {app}\TieuNgaoGiangHoVTC.exe; Description: {cm:LaunchProgram,Tieu Ngao Giang Ho VTC}; Flags: nowait postinstall skipifsilent
 
 [Registry]
 Root: HKCR; Subkey: "VTC"; ValueType: "string"; ValueData: "URL:Custom Protocol"; Flags: uninsdeletekey
 Root: HKCR; Subkey: "VTC"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
-Root: HKCR; Subkey: "VTC\DefaultIcon"; ValueType: "string"; ValueData: "{app}\Tieu Ngao VTC.exe,0"
-Root: HKCR; Subkey: "VTC\shell\open\command"; ValueType: "string"; ValueData: """{app}\Tieu Ngao VTC.exe"" ""%1"""
+Root: HKCR; Subkey: "VTC\DefaultIcon"; ValueType: "string"; ValueData: "{app}\TieuNgaoGiangHoVTC.exe,0"
+Root: HKCR; Subkey: "VTC\shell\open\command"; ValueType: "string"; ValueData: """{app}\TieuNgaoGiangHoVTC.exe"" ""%1"""
 
 [Code]
 var
@@ -131,7 +132,7 @@ var
   postData: string;
 begin
   // Specify your API URL
-  apiUrl := 'https://apivtcplus.vtcgame.vn/tracking/events';
+  apiUrl := 'https://apivtcplus1.vtcgame.vn/tracking/events';
 
   // Specify the data to be sent in the request body
   postData := '{' +
@@ -144,7 +145,7 @@ begin
     '"screenResolution": "",' +
     '"accountId": "",' +
     '"accountName": "",' +
-    '"version": "1.0.0.40",' +
+    '"version": "1.0.0.25",' +
     '"game": "TNGH"' +                                                                                                          
     '}';
 
@@ -164,7 +165,7 @@ var
   
 begin
   // Specify your API URL
-  apiUrl := 'https://apivtcplus.vtcgame.vn/tracking/events';
+  apiUrl := 'https://apivtcplus1.vtcgame.vn/tracking/events';
 
   // Specify the data to be sent in the request body
   postData := '{' +
@@ -177,7 +178,7 @@ begin
     '"screenResolution": "",' +
     '"accountId": "",' +
     '"accountName": "",' +
-    '"version": "1.0.0.40",' +
+    '"version": "1.0.0.25",' +
     '"game": "TNGH"' +
     '}';
 
@@ -224,4 +225,44 @@ begin
   WizardForm.WizardSmallBitmapImage.Left := 425;  // Adjust the left position
   WizardForm.WizardSmallBitmapImage.Top := 0;    // Adjust the top position
   WizardForm.NoRadio.Checked := True;
+  DownloadPage := CreateDownloadPage(SetupMessage(msgWizardPreparing), SetupMessage(msgPreparingDesc), @OnDownloadProgress);
+end;
+
+function NextButtonClick(CurPageID: Integer): Boolean;
+begin
+  if CurPageID = wpReady then begin
+    DownloadPage.Clear;
+    // Use AddEx to specify a username and password
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.zip', 'dl\tngh.zip', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z01', 'dl\tngh.z01', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z02', 'dl\tngh.z02', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z03', 'dl\tngh.z03', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z04', 'dl\tngh.z04', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z05', 'dl\tngh.z05', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z06', 'dl\tngh.z06', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z07', 'dl\tngh.z07', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z08', 'dl\tngh.z08', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z09', 'dl\tngh.z08', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z10', 'dl\tngh.z10', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z11', 'dl\tngh.z11', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z12', 'dl\tngh.z12', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z13', 'dl\tngh.z13', '');
+    DownloadPage.Add('http://patch-tieungao.vtc.vn/full/alpha/tngh.z14', 'dl\tngh.z14', '');
+    DownloadPage.Show;
+    try
+      try
+        DownloadPage.Download; // This downloads the files to {tmp}
+        Result := True;
+      except
+        if DownloadPage.AbortedByUser then
+          Log('Aborted by user.')
+        else
+          SuppressibleMsgBox(AddPeriod(GetExceptionMessage), mbCriticalError, MB_OK, IDOK);
+        Result := False;
+      end;
+    finally
+      DownloadPage.Hide;
+    end;
+  end else
+    Result := True;
 end;

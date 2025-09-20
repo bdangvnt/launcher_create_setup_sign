@@ -3,18 +3,18 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 ; https://github.com/jrsoftware/issrc/blob/main/Examples/CodeDownloadFiles.iss
 
-;#define MyAppName "VTCPlus"
-;#define MyAppVerName "VTCPlus_Setup"
-;#define MyAppPublisher "VTCGame"
-;#define MyAppURL "http://vtcgame.vn"
-;#define MyAppExeName "VTCPlus_Setup.exe"
+;#define MyAppName "Tieu Ngao Giang Ho VTC"
+;#define MyAppVerName "Tieu Ngao Giang Ho VTC Setup"
+;#define MyAppPublisher "Tieu Ngao Giang Ho VTC"
+;#define MyAppURL "http://vtc.org.vn"
+;#define MyAppExeName "TieuNgaoGiangHoVTC.exe"
 
 #ifndef rsBP
 	#define rsBP="Default rsbp"
 #endif
 
 #ifndef url
-	#define url="http://vtcgame.vn"
+	#define url="http://vtc.org.vn"
 #endif
 
 #ifndef outputDirectory
@@ -30,35 +30,37 @@
 #endif
 
 #ifndef eventTypePrefix
-	#define eventTypePrefix="VTCPLUS_W7_B2C_1.0.0.1W7b1129092023p"
+	#define eventTypePrefix="TNGH_W10_B2C_1.0.0.1W10b1112092025p"
 #endif
 
 [Setup]                                                                                     
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
+PrivilegesRequired=admin
+PrivilegesRequiredOverridesAllowed=dialog
 SignTool=VTCPlusSign
-AppId={{6BD22BA3-CD68-666B-86BD-88D66EA88E8C}
-AppName=VTCPlus
-AppVerName=VTCPlus 
-AppPublisher=VTCGame
+AppId={{6BD22BA3-CD68-666B-86BD-88D66EA88E8C}}
+AppName=Tieu Ngao Giang Ho VTC
+AppVerName=Tieu Ngao Giang Ho VTC 
+AppPublisher=Tieu Ngao Giang Ho VTC
 AppPublisherURL={#url}
 AppSupportURL={#url}
 AppUpdatesURL={#url}
-DefaultDirName={sd}\VTCGame\VTCPlus
-DefaultGroupName=VTCGame\VTCPlus
+DefaultDirName={sd}\VTC\Tieu Ngao Giang Ho VTC
+DefaultGroupName=Tieu Ngao Giang Ho VTC
 DisableProgramGroupPage=true
 
 OutputDir={#outputDirectory}
 OutputBaseFilename={#OutputSetupFilename}
-SetupIconFile={#rsBP}\inno\inno-images\au2pc\Iconapp.ico
+SetupIconFile={#rsBP}\inno\inno-images\tngh\Iconapp.ico
 
-UninstallIconFile={#rsBP}\inno\inno-images\au2pc\uninstall.ico
+UninstallIconFile={#rsBP}\inno\inno-images\tngh\uninstall.ico
 Compression=lzma
 SolidCompression=yes
 WindowVisible=false
-WizardImageFile={#rsBP}\inno\inno-images\au2pc\Iconapp-medium.bmp
-WizardSmallImageFile={#rsBP}\inno\inno-images\au2pc\Iconapp-small.bmp
+WizardImageFile={#rsBP}\inno\inno-images\tngh\Iconapp-medium.bmp
+WizardSmallImageFile={#rsBP}\inno\inno-images\tngh\Iconapp-small.bmp
 DirExistsWarning=no
 UsePreviousAppDir=false
 ;DiskSpanning=yes
@@ -72,7 +74,7 @@ SignedUninstaller=yes
 
 [Languages]
 ;Name: english; MessagesFile: compiler:Default.isl
-Name: "vietnamesedone"; MessagesFile: "compiler:Languages\VietnameseAu2PC.isl"
+Name: "vietnamesedone"; MessagesFile: "compiler:Languages\VietnameseTNGH.isl"
 
 [Tasks]
 Name: desktopicon; Description: {cm:CreateDesktopIcon}; GroupDescription: {cm:AdditionalIcons}; 
@@ -85,22 +87,21 @@ Source: {#BuildSourcePath}\*; DestDir: {app}; Flags: ignoreversion recursesubdir
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: {group}\VTCPlus; Filename: {app}\VTCPlus.exe; WorkingDir: {app}
+Name: {group}\Tieu Ngao Giang Ho VTC; Filename: {app}\TieuNgaoGiangHoVTC.exe; WorkingDir: {app}
 Name: {group}\Uninstall;IconFileName:{#rsBP}\inno\inno-images\uninstall.ico; Filename: {uninstallexe}
-Name: {userdesktop}\VTCPlus; Filename: {app}\VTCPlus.exe; WorkingDir: {app}; Tasks: desktopicon
-Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\VTCPlus; Filename: {app}\VTCPlus.exe; WorkingDir: {app}
+Name: {userdesktop}\Tieu Ngao Giang Ho VTC; Filename: {app}\TieuNgaoGiangHoVTC.exe; WorkingDir: {app}; Tasks: desktopicon
+Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\Tieu Ngao Giang Ho VTC; Filename: {app}\TieuNgaoGiangHoVTC.exe; WorkingDir: {app}
 
 [Run]
 Filename: "{tmp}\vc_redist.x86.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: not IsWin64
 Filename: "{tmp}\vc_redist.x64.exe"; Parameters: "/quiet /norestart"; StatusMsg: "Installing Visual C++ redistributable..."; Check: IsWin64
-Filename: {app}\7za.exe; Parameters: "x ""{tmp}\dl\audition_fp.zip"" -o""{app}\Audition"" * -r -aoa"; Flags: runhidden runascurrentuser;
-Filename: {app}\VTCPlus.exe; Description: {cm:LaunchProgram,VTCPlus}; Flags: nowait postinstall skipifsilent
+Filename: {app}\TieuNgaoGiangHoVTC.exe; Description: {cm:LaunchProgram,Tieu Ngao Giang Ho VTC}; Flags: nowait postinstall skipifsilent runasoriginaluser
 
 [Registry]
-Root: HKCR; Subkey: "VTCPlus"; ValueType: "string"; ValueData: "URL:Custom Protocol"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "VTCPlus"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
-Root: HKCR; Subkey: "VTCPlus\DefaultIcon"; ValueType: "string"; ValueData: "{app}\VTCPlus.exe,0"
-Root: HKCR; Subkey: "VTCPlus\shell\open\command"; ValueType: "string"; ValueData: """{app}\VTCPlus.exe"" ""%1"""
+Root: HKCR; Subkey: "VTC"; ValueType: "string"; ValueData: "URL:Custom Protocol"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "VTC"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
+Root: HKCR; Subkey: "VTC\DefaultIcon"; ValueType: "string"; ValueData: "{app}\TieuNgaoGiangHoVTC.exe,0"
+Root: HKCR; Subkey: "VTC\shell\open\command"; ValueType: "string"; ValueData: """{app}\TieuNgaoGiangHoVTC.exe"" ""%1"""
 
 [Code]
 var
@@ -132,7 +133,7 @@ var
   postData: string;
 begin
   // Specify your API URL
-  apiUrl := 'https://apivtcplus.vtcgame.vn/tracking/events';
+  apiUrl := 'https://apivtcplus1.vtcgame.vn/tracking/events';
 
   // Specify the data to be sent in the request body
   postData := '{' +
@@ -145,8 +146,8 @@ begin
     '"screenResolution": "",' +
     '"accountId": "",' +
     '"accountName": "",' +
-    '"version": "1.0.0.25",' +
-    '"game": "AU2PC"' +                                                                                                          
+    '"version": "1.0.0.45",' +
+    '"game": "TNGH"' +                                                                                                          
     '}';
 
   // Make the API request using the POST method
@@ -165,7 +166,7 @@ var
   
 begin
   // Specify your API URL
-  apiUrl := 'https://apivtcplus.vtcgame.vn/tracking/events';
+  apiUrl := 'https://apivtcplus1.vtcgame.vn/tracking/events';
 
   // Specify the data to be sent in the request body
   postData := '{' +
@@ -178,8 +179,8 @@ begin
     '"screenResolution": "",' +
     '"accountId": "",' +
     '"accountName": "",' +
-    '"version": "1.0.0.25",' +
-    '"game": "AU2PC"' +
+    '"version": "1.0.0.45",' +
+    '"game": "TNGH"' +
     '}';
 
   // Make the API request using the POST method
@@ -222,41 +223,7 @@ end;
 procedure InitializeWizard;
 begin
   { Set position of the small wizard image }
-  WizardForm.WizardSmallBitmapImage.Left := 425;  // Adjust the left position
+  WizardForm.WizardSmallBitmapImage.Left := 655;  // Adjust the left position
   WizardForm.WizardSmallBitmapImage.Top := 0;    // Adjust the top position
   WizardForm.NoRadio.Checked := True;
-  DownloadPage := CreateDownloadPage(SetupMessage(msgWizardPreparing), SetupMessage(msgPreparingDesc), @OnDownloadProgress);
-end;
-
-function NextButtonClick(CurPageID: Integer): Boolean;
-begin
-  if CurPageID = wpReady then begin
-    DownloadPage.Clear;
-    // Use AddEx to specify a username and password
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.zip', 'dl\audition_fp.zip', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z01', 'dl\audition_fp.z01', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z02', 'dl\audition_fp.z02', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z03', 'dl\audition_fp.z03', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z04', 'dl\audition_fp.z04', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z05', 'dl\audition_fp.z05', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z06', 'dl\audition_fp.z06', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z07', 'dl\audition_fp.z07', '');
-    DownloadPage.Add('https://cdnvtcplus2.vtcgame.vn/aupc/dl/audition_fp.z08', 'dl\audition_fp.z08', '');
-    DownloadPage.Show;
-    try
-      try
-        DownloadPage.Download; // This downloads the files to {tmp}
-        Result := True;
-      except
-        if DownloadPage.AbortedByUser then
-          Log('Aborted by user.')
-        else
-          SuppressibleMsgBox(AddPeriod(GetExceptionMessage), mbCriticalError, MB_OK, IDOK);
-        Result := False;
-      end;
-    finally
-      DownloadPage.Hide;
-    end;
-  end else
-    Result := True;
 end;
